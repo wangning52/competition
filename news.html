@@ -1,0 +1,2678 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>东方微风采网</title>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<style>
+
+
+/*导航设计*/
+
+
+#ad{ width:100%; position:relative;}
+#ad .adbg{ width:100%; height:500px; margin:0px auto; background:url(images/bg1.jpg) no-repeat center bottom; background-size:cover;}
+#ad .adbg .l-pen{ width:346px; height:500px; background-size:cover; float:left; background:url(images/bg1_left_pen.png) no-repeat;}
+#ad .adbg .r-pen{ width:372px; height:500px; background-size:cover; float:right; background:url(images/bg1_right_pen.png) no-repeat;}
+/*搜索框*/
+.search{width:454px;height:82px; position:absolute; left:500px; top:200px;}
+.search .mod-search{width:450px;height:36px;float:left;
+                    border:2px solid #2EEBA4;margin-top:12px;position:relative;}
+.search .mod-search .mod-drop{display:inline-block;width:64px;height:34px;position:absolute;
+                             background:rgba(0,0,0,0.3); top:0px;left:0px;
+							  z-index:3;text-decoration:none;color:#333;overflow:hidden;
+							  }
+.search .mod-search .txt{position:absolute;top:6px;left:67px;width:316px;height:24px;
+                         color:#888;text-indent:10px;border:0px;outline:none;}
+.search .mod-search .btn{position:absolute;width:58px;height:36px;background:#2EEBA4;
+                         top:0px;right:0px;}
+.mod-search .btn .sea-lo{position:absolute;top:9px;left:20px;}
+.mod-search .mod-drop .bt{display:block;width:65px;text-indent:8px;
+                          line-height:36px; color:#2EEBA4;}
+.mod-search .mod-drop .course{width:65px;height:36px; background:none;}
+.mod-search .mod-drop .jg{width:65px;height:35px;}
+.small-drop{position:absolute;top:11px;right:10px;}
+.mod-search .mod-drop:hover{}
+.mod-search .mod-drop .bt:hover{background:rgba(0,0,0,0.7);}
+.search .mod-list{width:450px;float:left;overflow:hidden;line-height:32px;}
+.mod-list a{margin-right:22px;color:#999;text-decoration:none;}
+.mod-list .li{margin-right:22px;color:#e85308;}
+.mod-list a:hover{color:#188eee;}
+.top .user{width:156px;height:50px;float:right;text-align:right;
+           line-height:50px;margin-top:8px;}
+.top .user .d{text-decoration:none;color:#666;}
+.top .user .zc{margin-left:10px;}
+.top .user a:hover{color:#188eee;}
+/**/
+/*导航结束*/
+
+/*课程分类*/
+#wrap-box{width:100%;height:255px;margin-top:50px;}
+.wrap-box2{width:1200px;height:255px;margin:0px auto;}
+.wrap-box-head{width:1200px;height:40px;border-bottom:1px solid #ddd;}
+.wrap-box-head font{line-height:40px;}
+.wrap-box-tit{float:left;font-size:22px;}
+.wrap-box-tit2{float:right;font-size:14px;cursor:pointer;}
+.wrap-box-course{width:1200px;height:193px;}
+.wrap-box-main{width:1200px;height:193px;margin-top:20px;}
+.wrap-box-main2{width:1200px;height:193px;display:none;}
+.wrap-box-course li{list-style:none;width:220px;height:177px;border:1px solid #fff;float:left;
+                    padding:8px;margin-right:2px;}
+.wrap-box-course li:hover{border:1px solid #ddd;}
+.wrap-box-course li a{text-decoration:none;}
+.wrap-box-course li .bt1{display:block;}
+.wrap-box-course li .shou1{color:#333;line-height:25px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.wrap-box-course li .shou1:hover{color:#62B4F7;}
+.wrap-box-course li .shou2 b{color:#5FB41B; padding-right:10px;}
+.wrap-box-course li .shou2{color:#999;}
+.wrap-box-course li .shou2:hover{color:#62B4F7;}
+
+/*热门课程分类*/
+#wrap-hot-box{width:100%;height:255px;margin-top:30px;}
+.wrap-hot-box2{width:1200px;height:255px;margin:0px auto;}
+.hot-top{float:left;width:1200px;height:40px;border-bottom:1px solid #ddd;}
+.hot-tit{font-size:24px;line-height:40px;float:left;}
+.hot-tit2{float:left;width:400px;height:40px;margin-left:130px;cursor:pointer;}
+.hot-tit2 span{font-size:14px;line-height:40px;display:inline-block;
+               padding:0px 20px;}
+.hot-tit2 span.hover3{border-bottom:2px solid #188eee;}
+.hot-main{float:left;width:1200px;height:215px;margin-top:20px;position:relative;}
+.hot-main2{width:1200px;height:215px;position:absolute;top:0px;left:0px;}
+.hot-course{width:1200px;height:215px;}
+.hot-course li{list-style:none;width:220px;height:177px;border:1px solid #fff;float:left;
+               padding:8px;margin-right:2px;}
+.hot-course li:hover{border:1px solid #ddd;}
+.hot-course li a{text-decoration:none;}
+.hot-course li .bt1{display:block;}
+.hot-course li .shou1{color:#333;line-height:25px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.hot-course li .shou1:hover{color:#62B4F7;}
+.hot-course li .shou2 b{color:#5FB41B; padding-right:10px;}
+.hot-course li .shou2{color:#999;}
+.hot-course li .shou2:hover{color:#62B4F7;}
+/*IT培训课程分类*/
+#mod-box-main{width:100%;}
+.mod-box-main2{width:1200px; height:461px; margin:0px auto; margin-top:50px;}
+.mod-top{float:left;width:1200px;height:40px;border-bottom:1px solid #ddd;}
+.mod-tit{font-size:24px;line-height:40px; height:40px; float:left;}
+.mod-tit2{float:left;height:40px;margin-left:153px;cursor:pointer;}
+.mod-tit2 span{font-size:14px;line-height:40px;display:inline-block;
+               padding:0px 20px;}
+.mod-tit2 span.hover3{border-bottom:2px solid #188eee;}
+.mod-box-main{width:1200px;}
+.mod-box-main>img{ width:240px; height:420px;}
+.mod-box-main ul li>a>img{ float:left; display:block; width:220px; height:124px;}
+#person{display:block;margin-left:-20px;cursor:pointer;float:left;}
+.course-card-list{width:746px;height:404px;float:left;margin-top:16px;margin-left:10px;}
+.course-card-list2{width:746px;height:404px;display:none;}
+.course-card-list li{list-style:none;width:220px;height:177px;border:1px solid #fff;
+                     float:left;padding:8px;margin-right:8px;margin-bottom:10px;}
+.course-card-list li:hover{border:1px solid #ddd;}
+.course-card-list a{text-decoration:none;}
+.course-card-list .bt1{display:block;}
+.course-card-list .shou1{color:#333;line-height:25px; width:220px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+
+.course-card-list .shou1:hover{color:#62B4F7;}
+.course-card-list .shou2 b{color:#5FB41B; padding-right:10px;}
+
+
+.course-card-list .shou2{color:#999;}
+.course-card-list .shou2:hover{color:#62B4F7;}
+.mod-rank{width:224px;height:420px;float:right;}
+.mod-rank .mod-rank2{width:208px;height:29px;margin-left:3px;border-bottom:1px solid #ddd;
+                     padding-left:10px;}
+.mod-rank .mod-rank2 a{font-size:14px;color:#999;padding:0px 20px;
+                       text-decoration:none;line-height:29px;display:inline-block;}
+.mod-rank2 a.free{color:#333;border-bottom:2px solid #188eee;}
+.mod-rank-list{padding-top:10px;}
+.mod-rank-list li{list-style:none;padding:10px 0px;width:222px;float:left;cursor:pointer;
+                  overflow:hidden;}
+.mod-rank-list li:hover{background:#e5e5e5;}
+.mod-rank-list li:hover .mod-rank-tit{color:#62B4F7;;}
+.mod-rank-list li span.mod-logo{width:18px;height:18px;display:block;background:#f0f;
+                                position:relative;overflow:hidden;float:left;
+								margin-right:20px;}
+.mod-rank-list li font.mod-rank-tit{ width:170px; height:19px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.mod-logo2{position:absolute;top:-80px;left:-236px; }
+.mod-rank-tit{display:block;float:left;font-size:14px;color:#333;}
+.mod-rank-list li dl.xiaotu{width:222px;height:50px;float:left;
+                            margin-top:10px;}
+.xiaotu dt{float:left;margin-left:40px; }
+.xiaotu dt img{width:89px; height:50px;}
+.xiaotu dd{float:left;color:#e85308;font-size:14px;margin-left:10px;}
+.xiaotu dd.num b{color:#999;font-weight:normal;}
+
+.lishao-main2{width:733px;height:202px;float:left;overflow:hidden;}
+.mian-foot{width:100%;float:left;margin-top:80px;}
+.mian-foot .lishao{width:1200px;margin:0px auto;}
+.lishao-top{width:100%;height:40px;background:#fff;}
+.lishao-top .wenzi{width:466px;height:40px;float:left;}
+.lishao-top .wenzi a{font-size:23px;color:#202020;text-decoration:none;font-weight:normal;}
+.lishao-top .wenzi a:hover{color:#62B4F7;}
+.li-list{width:734px;height:40px;float:left;border-bottom:1px solid #ccc;}
+.li-list li{list-style:none;float:left;width:90px;text-align:center;line-height:36px;
+            height:40px;}
+.li-list li a{color:#333;font-size:14px;text-decoration:none;font-weight:400;}
+.li-list li.hover2{border-bottom:2px solid #188eee;}
+.lishao-main{width:100%;height:220px;}
+.big-img{display:block;float:left;}
+.lishao-ul{width:733px;height:202px;float:left;margin-top:10px;display:none;
+           }
+.lishao-ul li{list-style:none;width:220px;float:left;margin:0px 6px;border:1px solid #fff;
+              padding:10px 5px;}
+.lishao-ul li:hover{border:1px solid #ccc;}
+.lishao-ul li .math2{line-height:25px;}
+.lishao-ul li .math2 a{text-decoration:none;color:#333;font-weight:normal;}
+.lishao-ul li .math2 a:hover{color:#62B4F7;}
+.lishao-ul li .free{color:#999;}
+.lishao-ul li .free span{color:#5FB41B;}
+.lishao-ul li .free b{font-weight:normal;color:#999;margin:0px 8px;}
+.lishao-ul li .free a{text-decoration:none;color:#999;}
+.lishao-ul li .free a:hover{color:#62B4F7;}
+
+.jigou{width:100%;height:255px;float:left;margin-top:50px;}
+.jigou2{width:1200px;height:95px;margin:80px auto;}
+.jigou2 .jg{width:95px;height:95px;font-size:22px;font-weight:100;line-height:95px;
+            float:left;}
+
+.jigou2 .jg a{font-size:22px;text-decoration:none;color:#000;}
+.jg-big{width:1090px;height:95px;float:left;position:relative;}
+.prev{position:absolute;top:32px;left:5px;cursor:pointer;}
+.next{position:absolute;top:32px;right:5px;cursor:pointer;}
+.jg-big-list{width:1000px;height:95px;margin:0px auto;position:relative;}
+.jg-big-list li{float:left;width:1000px;height:95px;list-style:none;position:absolute;}
+.jg-big-list li img{width:80px;border:0px;float:left;border:1px solid #ddd;
+                    margin:0px 15px;padding:6px;}
+/***************图片轮播下面的广************告*/
+
+
+</style>
+</head>
+<body>
+<div id="wnHeader">
+   <div class="wnbg"></div>
+   <div class="wnNav">
+      <h1></h1>
+      <div class="wnMainNav">
+          <ul>
+            <li><a class="hover" href="index.html" target="_blank">首页</a></li>
+            <li><a href="news.html" target="_blank">多彩风情</a></li>
+            <li><a href="details.html" target="_blank">众口纷纭</a></li>
+            <li><a href="person.html" target="_blank">个人风姿</a></li>
+                
+          </ul>
+          <div class="wnlogin">
+             <a href="#">登录  &nbsp; </a>
+             <a href="#"> 注册</a>
+          </div>
+      </div>
+   </div>
+
+</div>
+
+<div id="ad">
+ <div class="adbg">
+    <div class="l-pen"></div>
+    <!--输入框搜索功能设计-->
+     <div class="search">
+       <div class="mod-search">
+       <!--输入框下拉菜单设计-->
+       <a class="mod-drop" href="javascript:;">
+         <span class="course bt">比赛<img class="small-drop" src="images/drop.png"/></span>
+         <span class="jg bt">活动</span>
+         
+         <span class="jg bt">讲座</span>
+       </a>
+       <input type="text" class="txt" placeholder="搜索风采">
+       <a class="btn" href="javascript:;"><img class="sea-lo" src="images/search.png"/></a>
+       </div>
+       <div class="mod-list">
+         <a class="li" href="javascript:;">网页设计</a><a href="comment.html" target="_blank">服务外包</a><a href="comment.html" target="_blank">迎新晚会</a>
+         <a class="li" href="javascript:;">三创</a>
+       </div>
+     </div>
+    <div class="r-pen"></div>
+ </div>
+  
+
+</div>
+
+
+ 
+<!--课程分类-->
+<div id="wrap-box">
+  <div class="wrap-box2">
+     <p class="wrap-box-head">
+        <font class="wrap-box-tit">猜你喜欢</font>
+        <font class="wrap-box-tit2">换一批</font>
+     </p>
+     <div class="wrap-box-main">
+       <div class="wrap-box-main2" style="display:block;">
+          <ul class="wrap-box-course">
+          <li>
+          <a href="comment.html" target="_blank">
+            <img src="images/competition2.jpg"/>
+            <span class="shou1 bt1 hidden">信息分院第八届大学生职业生涯规划大赛 </span>
+            <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+          </a>
+          </li>
+          
+          <li>
+          <a href="comment.html" target="_blank">
+            <img src="images/jiangzuo2.jpg"/>
+            <span class="shou1 bt1 hidden">信息分院2016年服务外包宣讲会顺利举行</span>
+            <span class="shou2 bt1"><b>讲座</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+          </a>
+          </li>
+          
+          
+          <li>
+          <a href="comment.html" target="_blank">
+            <img src="images/encompetition1.jpg"/>
+            <span class="shou1 bt1">浙江财经大学东方学院第六届日语配音大赛完美落幕！ </span>
+            <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+          </a>
+          </li>
+          
+          
+          <li>
+          <a href="comment.html" target="_blank">
+            <img src="images/rwhuodong3.jpg"/>
+            <span class="shou1 bt1">我院人文与艺术分院创意工坊正式启动</span>
+            <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;人文与艺术分院</span>
+          </a>
+          </li>
+          
+          
+          <li>
+          <a href="comment.html" target="_blank">
+            <img src="images/rwjiangzuo2.png"/>
+            <span class="shou1 bt1">分院举办"人文讲坛"系列讲座——无界泛舟</span>
+            <span class="shou2 bt1"><b>讲座</b>&nbsp;&nbsp;&nbsp;人文与艺术分院</span>
+          </a>
+          </li>
+        </ul>
+       </div>
+     </div>
+ </div>
+</div>       
+<!--热门课程分类-->
+<div id="wrap-hot-box">
+   <div class="wrap-hot-box2">
+      <div class="hot-top">
+        <div class="hot-tit">热门风采</div>
+        <div class="hot-tit2">
+          <span class="hover3">比赛</span>
+          <span>活动</span>
+         
+          <span>讲座</span>
+        </div>
+     </div>
+     <div class="hot-main">
+        <div class="hot-main2">
+           <ul class="hot-course">
+             <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/fzcompetition.png"/>
+               <span class="shou1 bt1">分院学子参加浙江省第二届大学生法律职业能力竞赛辩论赛</span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+              </a>
+             </li>
+             
+             <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">信息分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+              </a>
+             </li>
+             
+             <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/I1.png"/>
+               <span class="shou1 bt1">金融与经贸分院辩论队在"东苑杯"辩论赛中成功夺冠</span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;金融与经贸分院</span>
+              </a>
+             </li>
+             
+             <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/L3.jpg"/>
+               <span class="shou1 bt1">挥洒汗水，激情飞扬——记工商管理分院第四届篮球争霸赛决赛</span>
+               <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;工商管理分院</span>
+              </a>
+             </li>
+             
+             <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/L2.jpg"/>
+               <span class="shou1 bt1">聚才论税——税收宣传月知识竞赛</span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+              </a>
+             </li>
+           </ul>
+        </div>
+        
+        <div class="hot-main2">
+           <ul class="hot-course">
+               <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/L3.jpg"/>
+               <span class="shou1 bt1">挥洒汗水，激情飞扬——记工商管理分院第四届篮球争霸赛决赛</span>
+               <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;工商管理分院</span>
+              </a>
+             </li>
+             
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/L2.jpg"/>
+               <span class="shou1 bt1">聚才论税——税收宣传月知识竞赛</span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+              </a>
+             </li>
+             
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">信息分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+              </a>
+             </li>
+             
+             <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/fzcompetition.png"/>
+               <span class="shou1 bt1">分院学子参加浙江省第二届大学生法律职业能力竞赛辩论赛</span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+              </a>
+             </li>
+             
+            <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/I1.png"/>
+               <span class="shou1 bt1">金融与经贸分院辩论队在"东苑杯"辩论赛中成功夺冠</span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;金融与经贸分院</span>
+              </a>
+             </li>
+           </ul>
+        </div>
+     </div>
+   </div>
+</div>
+<!--IT培训课程分类-->
+<div id="mod-box-main">
+   <div class="mod-box-main2">
+      <div class="mod-top">
+         <div class="mod-tit">信息之浩</div>
+         <div class="mod-tit2" id="xinxi1">
+           <span class="hover3">比赛</span>
+          <span>活动</span>
+         
+          <span>讲座</span>
+         </div>
+      </div>
+      <div class="mod-box-main" id="xinxi2">
+         <img id="person" src="images/xxfenyuan.jpg"/>
+         <div class="course-card-list">
+            <ul class="course-card-list2" style="display:block;">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition3.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+                  </a>
+               </li>
+               
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">信息分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+              </a>
+             </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition2.jpg"/>
+                   <span class="shou1 bt1">We are champion—信息分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+                  </a>
+               </li>
+               
+              <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition4.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition4.jpg"/>
+                   <span class="shou1 bt1">We are champion—信息分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+                  </a>
+               </li>
+               
+               <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition2.jpg"/>
+               <span class="shou1 bt1 hidden">信息分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+              </a>
+              </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong2.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong2.jpg"/>
+                   <span class="shou1 bt1">信息分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+                  </a>
+               </li>
+               
+                <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong4.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong1.jpg"/>
+                   <span class="shou1 bt1">信息分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+                  </a>
+               </li>
+               
+                <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong3.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong3.jpg"/>
+                   <span class="shou1 bt1">信息分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+                  </a>
+               </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition3.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+                  </a>
+               </li>
+               
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">信息分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+              </a>
+             </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition2.jpg"/>
+                   <span class="shou1 bt1">We are champion—信息分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+                  </a>
+               </li>
+               
+              <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition4.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition4.jpg"/>
+                   <span class="shou1 bt1">We are champion—信息分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+                  </a>
+               </li>
+               
+               <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition2.jpg"/>
+               <span class="shou1 bt1 hidden">信息分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;信息分院</span>
+              </a>
+              </li>
+            </ul>
+         </div>
+         
+         
+         <div class="mod-rank">
+           <div class="mod-rank2">
+            <a class="free" href="javascript:;">热点排行</a><a href="comment.html" target="_blank">分院特色</a>
+           </div>
+           
+           <ul class="mod-rank-list">
+              <li>
+                <span class="mod-logo">
+                  <img class="mod-logo2" src="images/competition2.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院第八届大学生职业生涯规划大赛</font>
+                <dl class="xiaotu">
+                   <dt><img src="images/competition1.jpg"/></dt>
+                   <dd class="num">2738人<br><b>信息分院</b></dd>
+                </dl>
+              </li>
+              
+               <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+             <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+           </ul>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 会计开始 -->
+<div id="mod-box-main1">
+   <div class="mod-box-main2">
+      <div class="mod-top">
+         <div class="mod-tit">会计之精</div>
+         <div class="mod-tit2" id="kuaiji1">
+           <span class="hover3">比赛</span>
+          <span>活动</span>
+         
+          <span>讲座</span>
+         </div>
+      </div>
+      <div class="mod-box-main" id="kuaiji2">
+         <img id="person" src="images/kuaiji0.png"/>
+         <div class="course-card-list">
+            <ul class="course-card-list2" style="display:block;">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/kuaiji1.png"/>
+                   <span class="shou1 bt1 hidden">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;会计分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/kuaiji2.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;会计分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/kuaiji3.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;会计分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/kuaiji4.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;会计分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/kuaiji5.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;会计分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/kuaiji6.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;会计分院</span>
+                  </a>
+               </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;云中帆教育</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;潭州设计学院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;潭州设计学院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;潭州设计学院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;潭州设计学院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                  <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;潭州设计学院</span>
+                  </a>
+               </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                  <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;云中帆教育</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;潭州设计学院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                  <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;潭州设计学院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;潭州设计学院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                  <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;潭州设计学院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;潭州设计学院</span>
+                  </a>
+               </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;云中帆教育</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                  <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;潭州设计学院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;潭州设计学院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                  <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;潭州设计学院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;潭州设计学院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/fzcompetition.png"/>
+                   <span class="shou1 bt1">寓教于乐，趣味大赛——会计周之会计技能大赛</span>
+                   <span class="shou2 bt1"><b>免费</b>&nbsp;&nbsp;&nbsp;潭州设计学院</span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+         
+         
+         <div class="mod-rank">
+           <div class="mod-rank2">
+            <a class="free" href="javascript:;">热点排行</a><a href="comment.html" target="_blank">分院特色</a>
+           </div>
+           
+           <ul class="mod-rank-list">
+              <li>
+                <span class="mod-logo">
+                  <img class="mod-logo2" src="images/competition2.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院第八届大学生职业生涯规划大赛</font>
+                <dl class="xiaotu">
+                   <dt><img src="images/competition1.jpg"/></dt>
+                   <dd class="num">2738人<br><b>信息分院</b></dd>
+                </dl>
+              </li>
+              
+               <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+             <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+           </ul>
+         </div>
+      </div>
+
+   </div>
+</div>
+<!-- 会计结束 -->
+<!-- 人文开始 -->
+<div id="mod-box-main">
+   <div class="mod-box-main2">
+      <div class="mod-top">
+         <div class="mod-tit">人文之韵</div>
+         <div class="mod-tit2" id="xinxi1">
+           <span class="hover3">比赛</span>
+          <span>活动</span>
+         
+          <span>讲座</span>
+         </div>
+      </div>
+      <div class="mod-box-main" id="xinxi2">
+         <img id="person" src="images/rwfenyuan.jpg"/>
+         <div class="course-card-list">
+            <ul class="course-card-list2" style="display:block;">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition3.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+                  </a>
+               </li>
+               
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">人文分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+              </a>
+             </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition2.jpg"/>
+                   <span class="shou1 bt1">We are champion—人文分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+                  </a>
+               </li>
+               
+              <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition4.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition4.jpg"/>
+                   <span class="shou1 bt1">We are champion—人文分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+                  </a>
+               </li>
+               
+               <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition2.jpg"/>
+               <span class="shou1 bt1 hidden">人文分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+              </a>
+              </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong2.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong2.jpg"/>
+                   <span class="shou1 bt1">人文分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+                  </a>
+               </li>
+               
+                <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong4.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong1.jpg"/>
+                   <span class="shou1 bt1">人文分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+                  </a>
+               </li>
+               
+                <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong3.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong3.jpg"/>
+                   <span class="shou1 bt1">人文分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+                  </a>
+               </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition3.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+                  </a>
+               </li>
+               
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">人文分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+              </a>
+             </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition2.jpg"/>
+                   <span class="shou1 bt1">We are champion—人文分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+                  </a>
+               </li>
+               
+              <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition4.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition4.jpg"/>
+                   <span class="shou1 bt1">We are champion—人文分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+                  </a>
+               </li>
+               
+               <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition2.jpg"/>
+               <span class="shou1 bt1 hidden">人文分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;人文分院</span>
+              </a>
+              </li>
+            </ul>
+         </div>
+         
+         
+         <div class="mod-rank">
+           <div class="mod-rank2">
+            <a class="free" href="javascript:;">热点排行</a><a href="comment.html" target="_blank">分院特色</a>
+           </div>
+           
+           <ul class="mod-rank-list">
+              <li>
+                <span class="mod-logo">
+                  <img class="mod-logo2" src="images/competition2.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院第八届大学生职业生涯规划大赛</font>
+                <dl class="xiaotu">
+                   <dt><img src="images/competition1.jpg"/></dt>
+                   <dd class="num">2738人<br><b>信息分院</b></dd>
+                </dl>
+              </li>
+              
+               <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+             <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+           </ul>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 人文结束 -->
+<!-- 外国语开始 -->
+<div id="mod-box-main">
+   <div class="mod-box-main2">
+      <div class="mod-top">
+         <div class="mod-tit">外语之音</div>
+         <div class="mod-tit2" id="xinxi1">
+           <span class="hover3">比赛</span>
+          <span>活动</span>
+         
+          <span>讲座</span>
+         </div>
+      </div>
+      <div class="mod-box-main" id="xinxi2">
+         <img id="person" src="images/wyfenyuan.jpg"/>
+         <div class="course-card-list">
+            <ul class="course-card-list2" style="display:block;">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition3.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+                  </a>
+               </li>
+               
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">外国语分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+              </a>
+             </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition2.jpg"/>
+                   <span class="shou1 bt1">We are champion—外国语分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+                  </a>
+               </li>
+               
+              <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition4.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition4.jpg"/>
+                   <span class="shou1 bt1">We are champion—外国语分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+                  </a>
+               </li>
+               
+               <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition2.jpg"/>
+               <span class="shou1 bt1 hidden">外国语分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+              </a>
+              </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong2.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong2.jpg"/>
+                   <span class="shou1 bt1">外国语分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+                  </a>
+               </li>
+               
+                <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong4.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong1.jpg"/>
+                   <span class="shou1 bt1">外国语分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+                  </a>
+               </li>
+               
+                <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong3.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong3.jpg"/>
+                   <span class="shou1 bt1">外国语分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+                  </a>
+               </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition3.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+                  </a>
+               </li>
+               
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">外国语分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+              </a>
+             </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition2.jpg"/>
+                   <span class="shou1 bt1">We are champion—外国语分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+                  </a>
+               </li>
+               
+              <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition4.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition4.jpg"/>
+                   <span class="shou1 bt1">We are champion—外国语分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+                  </a>
+               </li>
+               
+               <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition2.jpg"/>
+               <span class="shou1 bt1 hidden">外国语分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;外国语分院</span>
+              </a>
+              </li>
+            </ul>
+         </div>
+         
+         
+         <div class="mod-rank">
+           <div class="mod-rank2">
+            <a class="free" href="javascript:;">热点排行</a><a href="comment.html" target="_blank">分院特色</a>
+           </div>
+           
+           <ul class="mod-rank-list">
+              <li>
+                <span class="mod-logo">
+                  <img class="mod-logo2" src="images/competition2.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院第八届大学生职业生涯规划大赛</font>
+                <dl class="xiaotu">
+                   <dt><img src="images/competition1.jpg"/></dt>
+                   <dd class="num">2738人<br><b>信息分院</b></dd>
+                </dl>
+              </li>
+              
+               <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+             <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+           </ul>
+         </div>
+      </div>
+   </div>
+</div>
+
+<!-- 外国语结束 -->
+<!-- 法政开始 -->
+<div id="mod-box-main">
+   <div class="mod-box-main2">
+      <div class="mod-top">
+         <div class="mod-tit">法政之理</div>
+         <div class="mod-tit2" id="xinxi1">
+           <span class="hover3">比赛</span>
+          <span>活动</span>
+         
+          <span>讲座</span>
+         </div>
+      </div>
+      <div class="mod-box-main" id="xinxi2">
+         <img id="person" src="images/fzfenyuan.jpg"/>
+         <div class="course-card-list">
+            <ul class="course-card-list2" style="display:block;">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition3.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+                  </a>
+               </li>
+               
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">法政分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+              </a>
+             </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition2.jpg"/>
+                   <span class="shou1 bt1">We are champion—法政分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+                  </a>
+               </li>
+               
+              <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition4.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition4.jpg"/>
+                   <span class="shou1 bt1">We are champion—法政分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+                  </a>
+               </li>
+               
+               <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition2.jpg"/>
+               <span class="shou1 bt1 hidden">法政分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+              </a>
+              </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong2.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong2.jpg"/>
+                   <span class="shou1 bt1">法政分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+                  </a>
+               </li>
+               
+                <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong4.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong1.jpg"/>
+                   <span class="shou1 bt1">法政分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+                  </a>
+               </li>
+               
+                <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong3.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong3.jpg"/>
+                   <span class="shou1 bt1">法政分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+                  </a>
+               </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition3.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+                  </a>
+               </li>
+               
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">法政分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+              </a>
+             </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition2.jpg"/>
+                   <span class="shou1 bt1">We are champion—法政分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+                  </a>
+               </li>
+               
+              <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition4.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition4.jpg"/>
+                   <span class="shou1 bt1">We are champion—法政分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+                  </a>
+               </li>
+               
+               <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition2.jpg"/>
+               <span class="shou1 bt1 hidden">法政分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;法政分院</span>
+              </a>
+              </li>
+            </ul>
+         </div>
+         
+         
+         <div class="mod-rank">
+           <div class="mod-rank2">
+            <a class="free" href="javascript:;">热点排行</a><a href="comment.html" target="_blank">分院特色</a>
+           </div>
+           
+           <ul class="mod-rank-list">
+              <li>
+                <span class="mod-logo">
+                  <img class="mod-logo2" src="images/competition2.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院第八届大学生职业生涯规划大赛</font>
+                <dl class="xiaotu">
+                   <dt><img src="images/competition1.jpg"/></dt>
+                   <dd class="num">2738人<br><b>信息分院</b></dd>
+                </dl>
+              </li>
+              
+               <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">信息分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+             <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+           </ul>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 法政结束 -->
+<!-- 金融开始 -->
+<div id="mod-box-main">
+   <div class="mod-box-main2">
+      <div class="mod-top">
+         <div class="mod-tit">金融之细</div>
+         <div class="mod-tit2" id="xinxi1">
+           <span class="hover3">比赛</span>
+          <span>活动</span>
+         
+          <span>讲座</span>
+         </div>
+      </div>
+      <div class="mod-box-main" id="xinxi2">
+         <img id="person" src="images/xxfenyuan.jpg"/>
+         <div class="course-card-list">
+            <ul class="course-card-list2" style="display:block;">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition3.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+                  </a>
+               </li>
+               
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">金融分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+              </a>
+             </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition2.jpg"/>
+                   <span class="shou1 bt1">We are champion—金融分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+                  </a>
+               </li>
+               
+              <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition4.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition4.jpg"/>
+                   <span class="shou1 bt1">We are champion—金融分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+                  </a>
+               </li>
+               
+               <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition2.jpg"/>
+               <span class="shou1 bt1 hidden">金融分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+              </a>
+              </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong2.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong2.jpg"/>
+                   <span class="shou1 bt1">金融分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+                  </a>
+               </li>
+               
+                <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong4.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong1.jpg"/>
+                   <span class="shou1 bt1">金融分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+                  </a>
+               </li>
+               
+                <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong3.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong3.jpg"/>
+                   <span class="shou1 bt1">金融分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+                  </a>
+               </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition3.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+                  </a>
+               </li>
+               
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">金融分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+              </a>
+             </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition2.jpg"/>
+                   <span class="shou1 bt1">We are champion—金融分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+                  </a>
+               </li>
+               
+              <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition4.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition4.jpg"/>
+                   <span class="shou1 bt1">We are champion—金融分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+                  </a>
+               </li>
+               
+               <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition2.jpg"/>
+               <span class="shou1 bt1 hidden">金融分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;金融分院</span>
+              </a>
+              </li>
+            </ul>
+         </div>
+         
+         
+         <div class="mod-rank">
+           <div class="mod-rank2">
+            <a class="free" href="javascript:;">热点排行</a><a href="comment.html" target="_blank">分院特色</a>
+           </div>
+           
+           <ul class="mod-rank-list">
+              <li>
+                <span class="mod-logo">
+                  <img class="mod-logo2" src="images/competition2.jpg"/>
+                </span>
+                <font class="mod-rank-tit">金融分院第八届大学生职业生涯规划大赛</font>
+                <dl class="xiaotu">
+                   <dt><img src="images/competition1.jpg"/></dt>
+                   <dd class="num">2738人<br><b>金融分院</b></dd>
+                </dl>
+              </li>
+              
+               <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">金融分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">金融分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">金融分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+             <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+           </ul>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 金融结束 -->
+<!-- 工商开始 -->
+<div id="mod-box-main">
+   <div class="mod-box-main2">
+      <div class="mod-top">
+         <div class="mod-tit">工商之荟</div>
+         <div class="mod-tit2" id="xinxi1">
+           <span class="hover3">比赛</span>
+          <span>活动</span>
+         
+          <span>讲座</span>
+         </div>
+      </div>
+      <div class="mod-box-main" id="xinxi2">
+         <img id="person" src="images/xxfenyuan.jpg"/>
+         <div class="course-card-list">
+            <ul class="course-card-list2" style="display:block;">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition3.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+                  </a>
+               </li>
+               
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">工商分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+              </a>
+             </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition2.jpg"/>
+                   <span class="shou1 bt1">We are champion—工商分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+                  </a>
+               </li>
+               
+              <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition4.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition4.jpg"/>
+                   <span class="shou1 bt1">We are champion—工商分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+                  </a>
+               </li>
+               
+               <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition2.jpg"/>
+               <span class="shou1 bt1 hidden">工商分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+              </a>
+              </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong2.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong2.jpg"/>
+                   <span class="shou1 bt1">工商分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+                  </a>
+               </li>
+               
+                <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong4.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong1.jpg"/>
+                   <span class="shou1 bt1">工商分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+                  </a>
+               </li>
+               
+                <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong3.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong3.jpg"/>
+                   <span class="shou1 bt1">工商分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+                  </a>
+               </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition3.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+                  </a>
+               </li>
+               
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">工商分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+              </a>
+             </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition2.jpg"/>
+                   <span class="shou1 bt1">We are champion—工商分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+                  </a>
+               </li>
+               
+              <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition4.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition4.jpg"/>
+                   <span class="shou1 bt1">We are champion—工商分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+                  </a>
+               </li>
+               
+               <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition2.jpg"/>
+               <span class="shou1 bt1 hidden">工商分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;工商分院</span>
+              </a>
+              </li>
+            </ul>
+         </div>
+         
+         
+         <div class="mod-rank">
+           <div class="mod-rank2">
+            <a class="free" href="javascript:;">热点排行</a><a href="comment.html" target="_blank">分院特色</a>
+           </div>
+           
+           <ul class="mod-rank-list">
+              <li>
+                <span class="mod-logo">
+                  <img class="mod-logo2" src="images/competition2.jpg"/>
+                </span>
+                <font class="mod-rank-tit">工商分院第八届大学生职业生涯规划大赛</font>
+                <dl class="xiaotu">
+                   <dt><img src="images/competition1.jpg"/></dt>
+                   <dd class="num">2738人<br><b>工商分院</b></dd>
+                </dl>
+              </li>
+              
+               <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">工商分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">工商分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">工商分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+             <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+           </ul>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 工商结束 -->
+<!-- 财税开始 -->
+<div id="mod-box-main">
+   <div class="mod-box-main2">
+      <div class="mod-top">
+         <div class="mod-tit">财税之慎</div>
+         <div class="mod-tit2" id="xinxi1">
+           <span class="hover3">比赛</span>
+          <span>活动</span>
+         
+          <span>讲座</span>
+         </div>
+      </div>
+      <div class="mod-box-main" id="xinxi2">
+         <img id="person" src="images/xxfenyuan.jpg"/>
+         <div class="course-card-list">
+            <ul class="course-card-list2" style="display:block;">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition3.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+                  </a>
+               </li>
+               
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">财税分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+              </a>
+             </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition2.jpg"/>
+                   <span class="shou1 bt1">We are champion—财税分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+                  </a>
+               </li>
+               
+              <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition4.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition4.jpg"/>
+                   <span class="shou1 bt1">We are champion—财税分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+                  </a>
+               </li>
+               
+               <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition2.jpg"/>
+               <span class="shou1 bt1 hidden">财税分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+              </a>
+              </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong2.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong2.jpg"/>
+                   <span class="shou1 bt1">财税分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+                  </a>
+               </li>
+               
+                <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong4.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong1.jpg"/>
+                   <span class="shou1 bt1">财税分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+                  </a>
+               </li>
+               
+                <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong3.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong3.jpg"/>
+                   <span class="shou1 bt1">财税分院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+                  </a>
+               </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition3.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+                  </a>
+               </li>
+               
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">财税分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+              </a>
+             </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition2.jpg"/>
+                   <span class="shou1 bt1">We are champion—财税分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+                  </a>
+               </li>
+               
+              <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition4.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition4.jpg"/>
+                   <span class="shou1 bt1">We are champion—财税分院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+                  </a>
+               </li>
+               
+               <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition2.jpg"/>
+               <span class="shou1 bt1 hidden">财税分院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;财税分院</span>
+              </a>
+              </li>
+            </ul>
+         </div>
+         
+         
+         <div class="mod-rank">
+           <div class="mod-rank2">
+            <a class="free" href="javascript:;">热点排行</a><a href="comment.html" target="_blank">分院特色</a>
+           </div>
+           
+           <ul class="mod-rank-list">
+              <li>
+                <span class="mod-logo">
+                  <img class="mod-logo2" src="images/competition2.jpg"/>
+                </span>
+                <font class="mod-rank-tit">财税分院第八届大学生职业生涯规划大赛</font>
+                <dl class="xiaotu">
+                   <dt><img src="images/competition1.jpg"/></dt>
+                   <dd class="num">2738人<br><b>财税分院</b></dd>
+                </dl>
+              </li>
+              
+               <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">财税分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">财税分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">财税分院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+             <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+           </ul>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 财税结束 -->
+<!-- 东方之航开始  -->
+<div id="mod-box-main">
+   <div class="mod-box-main2">
+      <div class="mod-top">
+         <div class="mod-tit">东方之航</div>
+         <div class="mod-tit2" id="xinxi1">
+           <span class="hover3">比赛</span>
+          <span>活动</span>
+         
+          <span>讲座</span>
+         </div>
+      </div>
+      <div class="mod-box-main" id="xinxi2">
+         <img id="person" src="images/xxfenyuan.jpg"/>
+         <div class="course-card-list">
+            <ul class="course-card-list2" style="display:block;">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition3.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+                  </a>
+               </li>
+               
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">东方学院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+              </a>
+             </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition2.jpg"/>
+                   <span class="shou1 bt1">We are champion—东方学院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+                  </a>
+               </li>
+               
+              <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition4.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition4.jpg"/>
+                   <span class="shou1 bt1">We are champion—东方学院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+                  </a>
+               </li>
+               
+               <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition2.jpg"/>
+               <span class="shou1 bt1 hidden">东方学院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+              </a>
+              </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong2.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong2.jpg"/>
+                   <span class="shou1 bt1">东方学院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+                  </a>
+               </li>
+               
+                <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong4.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong1.jpg"/>
+                   <span class="shou1 bt1">东方学院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+                  </a>
+               </li>
+               
+                <li><a href="comment.html" target="_blank">
+                   <img src="images/xxhuodong3.jpg"/>
+                   <span class="shou1 bt1">珍惜大学，让时间流逝地更有意义 </span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/dshuodong3.jpg"/>
+                   <span class="shou1 bt1">东方学院第六届读书月顺利举办</span>
+                   <span class="shou2 bt1"><b>活动</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+                  </a>
+               </li>
+            </ul>
+            
+            <ul class="course-card-list2">
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition3.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+                  </a>
+               </li>
+               
+              <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition1.jpg"/>
+               <span class="shou1 bt1 hidden">东方学院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+              </a>
+             </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition2.jpg"/>
+                   <span class="shou1 bt1">We are champion—东方学院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+                  </a>
+               </li>
+               
+              <li><a href="comment.html" target="_blank">
+                   <img src="images/xxcompetition4.jpg"/>
+                   <span class="shou1 bt1">首届PPT设计竞赛圆满落幕</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+                  </a>
+               </li>
+               
+               <li><a href="comment.html" target="_blank">
+                   <img src="images/lqcompetition4.jpg"/>
+                   <span class="shou1 bt1">We are champion—东方学院勇夺第十二届新生篮球赛冠军</span>
+                   <span class="shou2 bt1"><b>技术比赛</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+                  </a>
+               </li>
+               
+               <li>
+              <a href="comment.html" target="_blank">
+               <img src="images/competition2.jpg"/>
+               <span class="shou1 bt1 hidden">东方学院第八届大学生职业生涯规划大赛 </span>
+               <span class="shou2 bt1"><b>拓展比赛</b>&nbsp;&nbsp;&nbsp;东方学院</span>
+              </a>
+              </li>
+            </ul>
+         </div>
+         
+         
+         <div class="mod-rank">
+           <div class="mod-rank2">
+            <a class="free" href="javascript:;">热点排行</a><a href="comment.html" target="_blank">分院特色</a>
+           </div>
+           
+           <ul class="mod-rank-list">
+              <li>
+                <span class="mod-logo">
+                  <img class="mod-logo2" src="images/competition2.jpg"/>
+                </span>
+                <font class="mod-rank-tit">东方学院第八届大学生职业生涯规划大赛</font>
+                <dl class="xiaotu">
+                   <dt><img src="images/competition1.jpg"/></dt>
+                   <dd class="num">2738人<br><b>东方学院</b></dd>
+                </dl>
+              </li>
+              
+               <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">东方学院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">东方学院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+              <li>
+                <span class="mod-logo">
+                  <img style="top:-140px;left:-236px;" class="mod-logo2" src="images/lqcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">东方学院勇夺第十二届新生篮球赛冠军</font>
+              </li>
+              
+             <li>
+                <span class="mod-logo">
+                  <img style="top:-110px;left:-236px;" class="mod-logo2" src="images/xxcompetition4.jpg"/>
+                </span>
+                <font class="mod-rank-tit">首届PPT设计竞赛圆满落幕</font>
+              </li>
+              
+           </ul>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- 东方之航结束 -->
+<!--  -->
+<!-- 开始 -->
+<!--main底部设计-->
+
+
+<!--机构入驻-->
+<div class="clear"></div>
+<!--版权设计-->
+
+<div id="banqun2">
+   <div class="banqun2">
+      <div class="qiang">
+        <img src="img/da-logo.png" width="60" height="45">
+      </div>
+      <p>Copyright © 2016 weiqian. All Rights Reserved.</p>
+      <p>浙江财经大学东方学院 版权所有 | 13信息3班工作室</p>
+   </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script>
+var mark=true;
+var _index=0;
+var _index2=0;
+var _index3=0;
+var _index4=0;
+var timer="";
+$("#flash .flash").eq(0).show().siblings("div").hide();
+$(".hot-main2").eq(0).fadeIn().siblings().fadeOut();
+$(".jg-big-list li").eq(0).show().siblings().hide();
+//**************************点击搜索课程效果**************************
+$(".course").click(function(event)
+   {
+	   event.stopPropagation();
+	    if(mark)
+		{
+			$(".mod-drop").css({'height':'69px'});
+			mark=false;
+		}
+		else
+		{
+			$(".mod-drop").css({'height':'34px'});
+			mark=true;
+		}
+	    
+   });
+   
+//阻止冒泡
+$(window).click(function(event)
+{
+   	$(".mod-drop").css({'height':'34px'});
+	mark=true;
+});
+//****************************旋转效果****************************
+$(".banner-right").hover(function()
+   {
+	  $(this).find(".myCourse").css({'-webkit-transform':'rotate(180deg)'});
+	  $(".link-list").show();    
+   }
+   ,function()
+   {
+	  $(this).find(".myCourse").css({'-webkit-transform':'rotate(0deg)'}); 
+	  $(".link-list").hide();   
+	});
+//****************************************************图片轮播图设计**************************
+$("#flash").hover(function()
+   {
+	   $(this).find(".ff").show(); //**************************鼠标放上去效果 
+	   clearInterval(timer); 
+	   
+   }
+   ,function()
+   {
+	   $(this).find(".ff").hide();   //**************************鼠标移开效果
+	   autoPlay();
+	});
+//**************************点击替换图片**************************
+
+$(".button2 li").hover(function()
+   {
+	   _index=$(this).index();
+	   tplf();
+   }
+   ,function()
+   {});
+ //**************************自动轮播**************************
+function autoPlay()
+{
+  
+   timer=setInterval(function()
+   {
+	  _index++;
+	  if(_index>6){_index=0;}
+	  tplf();
+   },4000);	
+};
+autoPlay();
+//**************************点击左边切**************************换
+$(".flash-right").click(function()
+{
+   _index++;
+   if(_index>6){_index=0;}
+   tplf();
+});
+//点击右边切换
+$(".flash-left").click(function()
+{
+   _index--;
+   if(_index<0){_index=6;}
+   tplf();
+});
+//**************************图片轮番的封装函数******************************
+function tplf()
+{
+	$(".button2 li").eq(_index).addClass("hover").siblings().removeClass("hover");
+	$(".flash").eq(_index).fadeIn().siblings("div").fadeOut();
+}
+//***********************************左边菜单栏的效果***********************************
+$(".nav-main li").hover(function()
+   {
+	  $(this).find(".main-list").show();
+	  $(this).find(".main-list").animate({top:'0'},200);
+   }
+   ,function()
+   {
+	  $(this).find(".main-list").hide();
+	  $(this).find(".main-list").animate({top:'40px'},200);   
+	});
+//*******************************图片轮番右边效果层***********************************
+
+
+$(".iphone3").hover(function()
+ {
+	$(this).find(".downLoad").stop().animate({'left':'-816px'},300);
+	$(this).css({'webkitAnimation':false});
+ }
+ ,function()
+ {
+	$(this).find(".downLoad").stop().animate({'left':'0px'},300);
+	$(this).css({'webkitAnimation':'scro 2s infinite'});
+ });
+//*******************************课程分类************
+$(".wrap-box-tit2").click(function()
+{
+   	_index++;
+	if(_index>4){_index=0;}
+	$(".wrap-box-main2").eq(_index).css({'display':'block'}).siblings().css({'display':'none'});
+});
+//*******************************热门课程分类************
+$(".hot-tit2 span").mouseover(function()
+{
+   _index=$(this).index();
+   $(".hot-main2").eq(_index).fadeIn().siblings().fadeOut();
+   $(this).addClass("hover3").siblings().removeClass("hover3");	
+})
+//*******************************IT培训课程************
+
+//*******************************会计培训课程************
+  function fenyaunFn(target,title){
+			$(target).mouseover(function()
+			{
+				_index=$(this).index();
+				$(this).addClass("hover3").siblings().removeClass("hover3");
+				$(title).eq(_index).css({'display':'block'}).siblings().css({'display':'none'});
+				//document.title=_index;	
+			});
+  }
+ fenyaunFn("#xinxi1 span","#xinxi2  .course-card-list2")
+ fenyaunFn("#kuaiji1 span","#kuaiji2  .course-card-list2")
+ fenyaunFn("#jinrong1 span","#jinrong2  .course-card-list2")
+ fenyaunFn("#gongshang1 span","#gongshang2  .course-card-list2")
+ fenyaunFn("#caishui1 span","#caishui2  .course-card-list2")
+ fenyaunFn("#renwen1 span","#renwen2  .course-card-list2")
+ fenyaunFn("#waiyu1 span","#waiyu2  .course-card-list2")
+ fenyaunFn("#fazheng1 span","#fazheng2  .course-card-list2")
+/***********************************************/
+$(".mod-rank2 a").mouseover(function()
+{
+    _index=$(this).index();
+	$(this).addClass("free").siblings().removeClass("free");
+	//document.title=_index;	
+});
+//*******************************最后的分类************
+$(".li-list li").hover(function()
+{
+   	_index2=$(this).index();
+	//alert(_index2);
+	$(this).addClass("hover2").siblings().removeClass("hover2");
+	$(".lishao-ul").eq(_index2).css({"display":"block"}).siblings().css({"display":"none"});
+});
+
+//*******************************最后的分类************
+$(".next").click(function()
+{
+   	_index4++;
+	if(_index4>3){_index4=0;}
+	//document.title=_index4;
+	$(".jg-big-list li").eq(_index4).fadeIn().siblings().fadeOut();
+});
+
+
+$(".prev").click(function()
+{
+   	_index4--;
+	if(_index4<0){_index4=3;}
+	//document.title=_index4;
+	$(".jg-big-list li").eq(_index4).fadeIn().siblings().fadeOut();
+});
+</script>
+</body>
+</html>

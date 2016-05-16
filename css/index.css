@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,p,h1,h2,h3,h4,form,input,dl,dt,dd{
+	margin:0px;
+	padding:0px;
+	font-family:"微软雅黑";
+	font-size:14px;
+}
+
+li{list-style:none;}
+a{text-decoration:none; color:#fff;}
+img{border:0px;vertical-align:top;}
+h1,h2,h3,h4{font-weight:normal;}
+input,textarea{outline:none;background:none;border:0px;}
+i,b,em{font-style:normal;}
+.clear{zoom:1;}
+.clear:after{content:"";display:block;height:0px; visibility:visible;clear:both;}
+
+.hidden{ text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+
+#wnHeader{ width:100%; position:relative; top:0px;  }
+#wnHeader .wnbg{ width:100%; height:70px; background:url(../images/headnav.png) no-repeat center top;  position:absolute; left:0px; top:0px; z-index:9999;}
+#wnHeader .wnNav{ width:980px; height:70px;  margin-left:-490px; position:absolute; left:50%; top:0px;z-index:9999; }
+#wnHeader .wnNav h1 {float: left; width: 90px; height: 50px; margin-left:76px; margin-top: 4px; background: url(../img/da-logo.png) no-repeat; background-size: cover;}
+#wnHeader .wnNav  .wnMainNav{ float:right; padding-top:20px;  padding-right:80px; line-height:24px;}
+#wnHeader .wnNav ul{ height:50px; float:left;padding-right:100px;  }
+#wnHeader .wnNav ul li { float:left;  height:50px;  padding:0px 20px; font-size:18px;  }
+#wnHeader .wnNav ul li  a{ color:#39CEB8; font-family:"微软雅黑";}
+#wnHeader .wnNav ul li  a:hover{color:#0FF;}
+#wnHeader .wnNav  .wnMainNav  .wnlogin{ float:left;}
+#wnHeader .wnNav  .wnMainNav  .wnlogin a:hover{ color:#0FF; }
+
+
+/******底部*********/
+#banqun2{width:100%;  background:#4A4B4C;margin-top:30px;}
+.banqun2{width:1200px;height:145px;margin:0px auto; padding-top:40px;}
+.qiang{width:60px;height:45px;margin:0px auto;}
+.banqun2 p{width:400px;margin:0px auto;text-align:center;color:#999;}
+.copy{ width:100%; height:20px; background:red;}
+/*导航设计*/
+::-webkit-scrollbar{width:8px;height:0px;background:#fff;}
+::-webkit-scrollbar-thumb{background:#f69;}

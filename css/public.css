@@ -1,0 +1,16 @@
+body,ul,ol,p,h1,h2,h3,form,input,dl,dt,dd{
+	margin:0px;
+	padding:0px;
+	font-family:"微软雅黑";
+	font-size:14px;
+	}
+li{list-style:none;}
+a{text-decoration:none;}
+img{border:0px;vertical-align:top;}
+h1,h2,h3{font-weight:normal;}
+input{outline:none;background:none;border:0px;}
+i,b,em{font-style:normal;}
+.clear{zoom:1;}
+.clear:after{content:"";display:block;height:0px; visibility:visible;clear:both;}
+/*公共样式*/
+
